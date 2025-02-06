@@ -2,17 +2,27 @@
  CloudBlood is a cloud-based intelligent blood bank system that integrates an AI-powered chatbot, a dynamic web application, and a serverless data querying system. This platform enables users to find blood donors, check availability, and analyze donation trends using AWS cloud services.
 
 ## Features
+
 - AI Chatbot – Answers user queries and collects donor information.
+
 - Dynamic Web Application – Manages donor/recipient requests with real-time updates.
+
 - Serverless Data Querying.
+
 - Uses AWS Athena, Glue, and S3 to analyze blood donation trends.
+
 - Cloud Deployment – Hosted on AWS (EC2, S3, Lambda, DynamoDB, and QuickSight).
 
 ## Tech Stack
+
 **Backend:** Python (Flask/Django), AWS Lambda
+
 **Frontend:** HTML, CSS, JavaScript (React optional)
+
 **Chatbot:** NLTK, spaCy, scikit-learn
+
 **Database:** AWS DynamoDB / PostgreSQL
+
 **Cloud Services:** AWS EC2, S3, Athena, Glue, QuickSight
 
 ## Installation & Setup
@@ -52,15 +62,23 @@ The app will be available at http://127.0.0.1:5000/.
 ```
 ## Deploying on AWS
 1️. Deploying the Web App on EC2
+
 -Launch an EC2 instance and install Python, Flask/Django.
+
 -Clone the repository and run the app.
 
 2️. Deploying the Chatbot on AWS Lambda
+
 -Package the chatbot script and deploy it as a Lambda function.
+
 -Use API Gateway to expose it as an endpoint.
 
 3️. Setting Up Serverless Data Querying
+
 -Upload blood donation records to AWS S3.
+
 -Use AWS Glue to clean and prepare data.
+
 -Run SQL queries on AWS Athena.
+
 -Use AWS QuickSight to visualize trends.
