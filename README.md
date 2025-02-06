@@ -3,7 +3,8 @@
 
 ## Features
 - AI Chatbot – Answers user queries and collects donor information.
-- Dynamic Web Application – Manages donor/recipient requests with real-time updates.-✅ Serverless Data Querying 
+- Dynamic Web Application – Manages donor/recipient requests with real-time updates.
+- Serverless Data Querying.
 - Uses AWS Athena, Glue, and S3 to analyze blood donation trends.
 - Cloud Deployment – Hosted on AWS (EC2, S3, Lambda, DynamoDB, and QuickSight).
 
@@ -23,8 +24,7 @@ cd CloudBlood
 ```
 2️. Create a Virtual Environment & Install Dependencies
 ```bash
-Copy
-Edit
+
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -52,13 +52,15 @@ The app will be available at http://127.0.0.1:5000/.
 ```
 ## Deploying on AWS
 1️. Deploying the Web App on EC2
-Launch an EC2 instance and install Python, Flask/Django.
-Clone the repository and run the app.
+-Launch an EC2 instance and install Python, Flask/Django.
+-Clone the repository and run the app.
+
 2️. Deploying the Chatbot on AWS Lambda
-Package the chatbot script and deploy it as a Lambda function.
-Use API Gateway to expose it as an endpoint.
+-Package the chatbot script and deploy it as a Lambda function.
+-Use API Gateway to expose it as an endpoint.
+
 3️. Setting Up Serverless Data Querying
-Upload blood donation records to AWS S3.
-Use AWS Glue to clean and prepare data.
-Run SQL queries on AWS Athena.
-Use AWS QuickSight to visualize trends.
+-Upload blood donation records to AWS S3.
+-Use AWS Glue to clean and prepare data.
+-Run SQL queries on AWS Athena.
+-Use AWS QuickSight to visualize trends.
